@@ -1,0 +1,221 @@
+/* import font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+/* header style  */
+header{
+    width: 100%;
+    background-color: #562EFF;
+    display: flex;
+    justify-content: center;
+}
+.navigationBar{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.logoNav{
+    display: flex;
+}
+.logoNav img{
+    width: 40px;
+    height: 40px;
+    padding: 25px 0px;
+
+}
+.logoNav h2{
+    font-size: 28px;
+    padding: 5px 20px;
+    color: white;
+}
+
+.listNav ul{
+    display: flex;
+}
+.listNav ul li{
+    list-style-type: none;
+    padding: 10px 20px;
+}
+.listNav ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+/* main section top players style  */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container{
+    width: 70%;
+    background-color: #FFFFFF;
+    padding: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.sectionTitle{
+    font-size: 24px;
+    color:  #562EFF;
+    margin-top: 3px;
+    padding-bottom: 20px;
+}
+.players{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+
+    
+}
+
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 76px;
+    height: 76px;
+}
+.player h3{
+    font-size: 18px;
+    padding-left: 30px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Top blogs style  */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+}
+.blog{
+    display: flex;
+    align-items: center;
+}
+.blog img{
+    width: 220px;
+    height: 150px;
+    margin-right: 20px;
+}
+.blogDetails p{
+    color:#9F9F9F;
+    font-size: 16px;
+}
+.blogDetails h3{
+    margin-top: 0;
+    font-size: 20px;
+}
+.blogDetails p a{
+    text-decoration: none;
+    color: #562EFF;;
+}
+
+/* latest courses style  */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+
+}
+.course{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 320px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 50px gray;
+    border-radius: 20px;
+}
+
+.course img{
+    width: 300px;
+    height: 150px;
+}
+.course h3{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.course p{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #ED6B4F;;
+}
+span{
+    color: #FF4A60;
+    margin-right: 15px;
+    font-size: 20px;
+}
+span .starColor{
+    color: #FFC014;
+}
+.duration{
+    background-color: #FFE4E8;
+    border-radius: 15px;
+}
+
+/* set style for moblile or small screen  */
+@media only screen and (max-width: 688px) {
+  
+    .container{
+        width: 100%;
+    }
+    header{
+        display: none;
+    }
+
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog, .course{
+        flex-direction: column;
+    }
+    .sectionTitle{
+        padding-left: 20px;
+    }
+    .course{
+        margin-left: 40px;
+        margin-right: 10px;
+    }
+}
+
+/* tablate queries */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  
+    .container{
+        width: 100%;
+    }
+    header{
+        display: none;
+    }
+
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player, .blog, .course{
+        flex-direction: column;
+    }
+    .sectionTitle{
+        padding-left: 20px;
+    }
+    .course{
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+
+}
