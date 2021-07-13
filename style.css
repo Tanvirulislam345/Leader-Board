@@ -18,7 +18,7 @@ header{
 .navigationBar{
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    width: 870px;
 }
 .logoNav{
     display: flex;
@@ -56,9 +56,9 @@ main{
 
 }
 .container{
-    width: 1100px;
+    width: 870px;
     background-color: #FFFFFF;
-    padding: 50px;
+    padding: 30px;
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
@@ -84,8 +84,8 @@ main{
     align-items: center;
 }
 .player img{
-    width: 76px;
-    height: 76px;
+    width: 56px;
+    height: 56px;
 }
 .player h3{
     font-size: 18px;
@@ -108,18 +108,19 @@ hr{
     align-items: center;
 }
 .blog img{
-    width: 220px;
-    height: 150px;
+    width: 170px;
+    height: 117px;
     margin-right: 20px;
-}
-.blogDetails p{
-    color:#9F9F9F;
-    font-size: 16px;
 }
 .blogDetails h3{
     margin-top: 0;
     font-size: 20px;
 }
+.blogDetails p{
+    color:#9F9F9F;
+    font-size: 16px;
+}
+
 .blogDetails p a{
     text-decoration: none;
     color: #562EFF;;
@@ -135,8 +136,8 @@ hr{
 .course{
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 320px;
+    width: 253px;
+    height: 275px;
     margin-right: 20px;
     margin-bottom: 20px;
     box-shadow: 10px 10px 50px gray;
@@ -144,8 +145,7 @@ hr{
 }
 
 .course img{
-    width: 300px;
-    height: 150px;
+    width: 100%;
 }
 .course h3{
     font-size: 18px;
@@ -159,7 +159,7 @@ hr{
 span{
     color: #FF4A60;
     margin-right: 15px;
-    font-size: 20px;
+    font-size: 14px;
 }
 span .starColor{
     color: #FFC014;
@@ -189,8 +189,7 @@ span .starColor{
         padding-left: 20px;
     }
     .course{
-        margin-left: 40px;
-        margin-right: 10px;
+        margin-left: 60px;
     }
 }
 
